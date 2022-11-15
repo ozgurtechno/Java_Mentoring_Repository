@@ -4,7 +4,7 @@ public class StringMethodlar {
 
 
         String word = "Techno Study";                   //  "T e c h n o   S t u  d  y"
-                                                        //   0 1 2 3 4 5 6 7 8 9 10 11
+                                                        //   0 1 2 3 4 5 6 7 8 9  10 11
 
         System.out.println("Kelimenin uzunlugu : " + word.length());
         System.out.println("Kelimenin kucuk harfle yazimi : " + word.toLowerCase());
