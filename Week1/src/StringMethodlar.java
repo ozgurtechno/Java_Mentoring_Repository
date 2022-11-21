@@ -2,6 +2,13 @@ public class StringMethodlar {
 
     public static void main(String[] args) {
 
+        String cat = "Cat";
+        String cat2 = "Cat";
+        String cat3 = new String("cat");
+
+        System.out.println(cat==cat2);
+        System.out.println(cat.equalsIgnoreCase(cat3));
+
 
         String word = "Techno Study";                   //  "T e c h n o   S t u  d  y"
                                                         //   0 1 2 3 4 5 6 7 8 9  10 11

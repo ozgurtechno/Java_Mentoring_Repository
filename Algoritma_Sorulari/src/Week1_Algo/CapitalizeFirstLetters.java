@@ -6,8 +6,23 @@ public class CapitalizeFirstLetters {
 
         String givenWord = "Ali Veli";
 
-        // Sonuc A.M. seklinde ekrana yazdirilmali...
+        // Sonuc A.V. seklinde ekrana yazdirilmali...
 
-        System.out.println(givenWord.charAt(0) + "." + givenWord.charAt(givenWord.indexOf(" ") + 1 ) + ".");
+
+        int x =12;
+        int y =6;
+
+        if (x > y){
+            System.out.println("X buyuktur");
+        } else{
+            System.out.println("Y buyuktur");
+        }
+
+        // 50 sayidan en buyuk olanini bulmak istesek?
+
+        int biggestOne = Math.max(x,y);
+        System.out.println("biggestOne = " + biggestOne);
+
+
     }
 }

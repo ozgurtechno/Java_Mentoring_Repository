@@ -16,16 +16,13 @@ public class Swap2Numbers {
         System.out.println("X in yeni degeri...: " + x);
         System.out.println("Y nin yeni degeri..: " + y);
 
-
-
         // Cozum 2 : Yeni bir degisken tanimlanmadan....
-
         int a = 6;
         int b = 12;
 
-        a = a - b;
-        b = a + b;
-        a = b - a;
+        a = a - b;  // 6 - 12 = -6
+        b = a + b;  // -6 + 12 = 6
+        a = b - a;  // 6 - -6  = 12
 
         System.out.println("A in yeni degeri...: " + a);
         System.out.println("B nin yeni degeri..: " + b);

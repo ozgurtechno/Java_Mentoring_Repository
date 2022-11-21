@@ -9,7 +9,7 @@ public class NoSpace {
         // Verilen String de bosluklari kaldirarak ekrana yeniden yazdiriniz...
         // String methodlarindan uygun olanini kullaniniz...
 
-        System.out.println("sonuc " + givenString.replaceAll(" ", ""));
+
 
     }
 }

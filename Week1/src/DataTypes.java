@@ -8,7 +8,7 @@ public class DataTypes {
         int     i = 1222222222;
         long    l = 2222222222222222222L;
 
-        double  d  = 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999.0;
+        double  d  = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999.0;
         double  d1 = 1.7976931348623157E308;
         //System.out.println(Double.MAX_VALUE);
 
@@ -19,6 +19,10 @@ public class DataTypes {
         boolean isOkey = true;
         char ch  = 'a';
         char ch2 = 'A';
+
+        System.out.println("character = "+ (ch * ch2));
+        System.out.println(ch);
+        System.out.println(67+7);
 
         // Reference Data Types ---------------------------------------------------------------------------------------
 
