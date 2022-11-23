@@ -10,21 +10,21 @@ public class ParaUstu {
         Scanner scan = new Scanner(System.in);
 
         double value = scan.nextDouble();
-        int valueIntegral = (int) value;
+        int amount = (int) value;
 
         // Cozum
 
-        int hundred = valueIntegral / 100;
+        int hundred = amount / 100;
 
-        int fifty = (valueIntegral % 100) / 50;
+        int fifty = (amount % 100) / 50;
 
-        int twenty = ((valueIntegral % 100) % 50) / 20;
+        int twenty = ((amount % 100) % 50) / 20;
 
-        int ten = (((valueIntegral % 100) % 50) % 20) / 10;
+        int ten = (((amount % 100) % 50) % 20) / 10;
 
-        int five = ((((valueIntegral % 100) % 50) % 20) % 10) / 5;
+        int five = ((((amount % 100) % 50) % 20) % 10) / 5;
 
-        int one = (((((valueIntegral % 100) % 50) % 20) % 10) % 5) / 1;
+        int one = (((((amount % 100) % 50) % 20) % 10) % 5) / 1;
 
 
         System.out.println(hundred + " hundred dollar bills\n" +
