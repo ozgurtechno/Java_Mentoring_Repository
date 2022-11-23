@@ -2,7 +2,6 @@ public class ArithmeticOperators {
 
     public static void main(String[] args) {
 
-
         int x = 5;
         int y = 2;
 
@@ -19,6 +18,12 @@ public class ArithmeticOperators {
         System.out.println("x-- = " + x--);
         System.out.println("--y = " + --y);
         System.out.println("--x = " + --x);
+
+
+
+
+
+
 
 
 
