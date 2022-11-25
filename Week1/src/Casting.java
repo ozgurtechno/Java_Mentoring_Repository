@@ -20,9 +20,5 @@ public class Casting {
         System.out.println(b);
         System.out.println(a==b);
         System.out.println(a.equals(b)); //
-
-
-
-
     }
 }

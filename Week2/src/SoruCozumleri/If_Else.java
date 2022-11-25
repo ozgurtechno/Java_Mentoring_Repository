@@ -35,5 +35,24 @@ public class If_Else {
         } else{
             System.out.println("sisteme giriş başarılı");
         }
+
+        //******************************************************************
+
+        // ORNEK SORU2 : Trafikte seyir halindeki kullanıcıdan trafik ışıklarından hangisinin yandığı bilgisini alıp
+        // yönlendirme yapan programı yazınız.
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Yanan Trafik Lambası : ");
+        String st = input.nextLine();
+
+        if (st.equalsIgnoreCase("kırmızı")) {
+            System.out.println("DUR!");
+        }else if(st.equalsIgnoreCase("sarı")){
+            System.out.println("Geçmeye Hazırlan!");
+        }else if (st.equalsIgnoreCase("yeşil") ){
+            System.out.println("GEÇ");
+        }else {
+            System.out.println("Hatalı Giriş Yaptınız!!");
+        }
     }
 }
