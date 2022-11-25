@@ -6,15 +6,15 @@ public class ParaUstu {
 
     public static void main(String[] args) {
 
-        System.out.print("Enter amount of money: ");
+        System.out.print("Bir fiyat giriniz: ");
         Scanner scan = new Scanner(System.in);
 
         double value = scan.nextDouble();
         int amount = (int) value;
 
-        // Cozum
+        // Cozum  120
 
-        int hundred = amount / 100;
+        int hundred = amount / 100;   // verilen para miktarini 100 e bolersem kac adet 100 luk var bulurum...  120 / 100 = 1
 
         int fifty = (amount % 100) / 50;
 
@@ -24,10 +24,10 @@ public class ParaUstu {
 
         int five = ((((amount % 100) % 50) % 20) % 10) / 5;
 
-        int one = (((((amount % 100) % 50) % 20) % 10) % 5) / 1;
+        int one = (((((amount % 100) % 50) % 20) % 10) % 5);
 
 
-        System.out.println(hundred + " hundred dollar bills\n" +
+        System.out.println(hundred + " adet yuz tl\n" +
                 fifty + " adet elli tl\n" +
                 twenty + " adet yirmi tl\n" +
                 ten + " adet on tl\n" +

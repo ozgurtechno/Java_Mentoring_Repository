@@ -2,7 +2,7 @@ public class SwitchCase {
     public static void main(String[] args) {
 
         //The Java switch expression must be of byte, short, int, long (with its Wrapper type), enums and string.
-        int day = 4;
+        int day =9;
         switch (day) {
             case 1:
                 System.out.println("Monday");

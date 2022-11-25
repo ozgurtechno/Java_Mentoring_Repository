@@ -1,12 +1,32 @@
 package Week1_Algo;
 
+import java.util.Locale;
+
 public class CapitalizeFirstLetters {
 
     public static void main(String[] args) {
 
-        String givenWord = "Ali Veli";
+        String givenWord = "ali veli";
 
         // Sonuc A.V. seklinde ekrana yazdirilmali...
+        int bosluk = givenWord.indexOf(" ");
+
+        System.out.println(givenWord.substring(0,1).toUpperCase() + "." +
+                givenWord.substring(bosluk + 1, bosluk + 2).toUpperCase() + ".");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         int x =12;

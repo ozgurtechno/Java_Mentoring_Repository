@@ -25,6 +25,7 @@ public class _03_Soru {
         int r = 3;
 
         r *= x + y; // 3 *= 2 + 1 ---> 3 *= 3 ---> 9
+        r *= x + y;
 
         System.out.print(r);
 

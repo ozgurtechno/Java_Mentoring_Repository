@@ -20,9 +20,10 @@ public class _12_Soru {
         int t = 0;
         int i = 0;
 
-        t = t + i;
+        t += i++;
 
-        i = i + 1;
+
+
 
         // burada t += i ifadesinden sonra i + 1 olduğu için, += i kodu yerine, +=i++ gelmelidir.
 
