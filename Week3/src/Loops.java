@@ -7,6 +7,8 @@ public class Loops {
             System.out.println("Merhaba Dunya");
         }
 
+
+
         // While Loop
         int i = 0;
         while (i < 10){
@@ -14,11 +16,16 @@ public class Loops {
             i++;
         }
 
+
+
         // Do-While Loop - Neden 10 defa cagrilmadi?
         int y = 0;
         do{
             System.out.println("Do-While dongusu cagrildi");
         } while (y > 10);
+
+
+
 
         // Nested For Loops
         for (int row = 1; row <= 4; row++) {
