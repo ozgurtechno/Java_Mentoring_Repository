@@ -41,7 +41,7 @@ public class If_Else {
         // ORNEK SORU2 : Trafikte seyir halindeki kullanıcıdan trafik ışıklarından hangisinin yandığı bilgisini alıp
         // yönlendirme yapan programı yazınız.
 
-        Scanner input = new Scanner(System.in);
+        Scanner input2 = new Scanner(System.in);
         System.out.print("Yanan Trafik Lambası : ");
         String st = input.nextLine();
 
