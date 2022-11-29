@@ -15,7 +15,10 @@ public class WhileLoops {
             System.out.println("Do-While dongusu cagrildi");
         } while (y > 10);
 
-
         //------------------- Ornekler ----------------------------------------------
+
+        // Ornek - 3 - Verilen bir sayinin Faktoryelini hesaplayan bir program yaziniz
+
+
     }
 }

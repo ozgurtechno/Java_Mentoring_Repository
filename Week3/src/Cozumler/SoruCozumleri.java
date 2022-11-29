@@ -34,5 +34,19 @@ public class SoruCozumleri {
             System.out.println(str + " is not a Palindrome String.");
         }
 
+        System.out.println("------------------------------ Ornek 3 --------------------------------------");
+        // Ornek - 3 - Verilen bir sayinin Faktoryelini hesaplayan bir program yaziniz
+
+        int n = 6;
+        int factorial = 1;
+        int i = 1;
+
+        while(i <= n) {
+            factorial = factorial*i;
+            i++;
+        }
+
+        System.out.println("Factorial of "+n+" is : "+factorial);
+
     }
 }
