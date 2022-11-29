@@ -7,7 +7,6 @@ public class ForLoops {
             System.out.println("Merhaba Dunya");
         }
 
-
         // Nested For Loops
         for (int row = 1; row <= 4; row++) {
 
@@ -20,5 +19,11 @@ public class ForLoops {
 
 
         //------------------- Ornekler ----------------------------------------------
+
+        // Ornek 1 - Verilen bir String ifadeyi tersten yazdiran bir program yaziniz
+
+        // Ornek 2 - Verilen bir String ifadenin Palindrome olup olmadigini test eden bir program yaziniz
+
+
     }
 }
