@@ -13,8 +13,8 @@ public class If_Else_EmailValidator {
     1- Email ".com" ile bitmeli
     2- Email "@" işareti bulundurmalı
     3- "@" işareti ".com" dan önce olmalı
-    4- "@" ile ".com" arasinda en az 1 karakter olmalı
-    5- "@" işareti öncesinde en az 1 karakter olmalı
+    4- "@" işareti öncesinde en az 1 karakter olmalı
+    5- "@" ile ".com" arasinda en az 1 karakter olmalı
 
      */
 
