@@ -24,6 +24,6 @@ public class ForLoops {
 
         // Ornek 2 - Verilen bir String ifadenin Palindrome olup olmadigini test eden bir program yaziniz
 
-
+        // Ornek - 4 - Girilen bir sayinin Asal sayi olup olmadigini bulan bir program yaziniz...
     }
 }

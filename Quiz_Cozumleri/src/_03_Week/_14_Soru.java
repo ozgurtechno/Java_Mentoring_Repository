@@ -13,8 +13,6 @@ public class _14_Soru {
             }
             System.out.println(b + "," + a);
 
-
-
             Cevap = "9,5".
 
      */
