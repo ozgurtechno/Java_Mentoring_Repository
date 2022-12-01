@@ -4,7 +4,7 @@ public class CarpimTablosu {
 
     public static void main(String[] args) {
 
-        // Carpim Tablosunun 1, 2 ve 3 ler hanesinin tum sonuclarini ekrana yazdiranm bir program yaziniz...
+        // Carpim Tablosunun 1, 2 ve 3 ler hanesinin tum sonuclarini ekrana yazdiran bir program yaziniz...
 
         // Outer for loop.
         for(int i = 1; i <= 3; i++)

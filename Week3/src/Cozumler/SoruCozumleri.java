@@ -51,17 +51,15 @@ public class SoruCozumleri {
         System.out.println("------------------------------ Ornek 4 --------------------------------------");
         // Ornek - 4 - Girilen bir sayinin Asal sayi olup olmadigini bulan bir program yaziniz...
 
-        int temp;
         boolean isPrime = true;
         Scanner scan = new Scanner(System.in);
         System.out.println("Bir sayi giriniz:");
 
         int num = scan.nextInt();
-        scan.close();
 
-        for (int j=2 ; j <= num/2 ; j++) {
-            temp = num % j;
-            if (temp == 0) {
+        for (int j = 2 ; j <= num/2 ; j++) {
+
+            if ((num % j) == 0) {
                 isPrime = false;
                 break;
             }
