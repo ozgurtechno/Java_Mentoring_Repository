@@ -20,16 +20,6 @@ public class Array_Demo {
         int[] numbers3 = { 20, 10 , 40 };
         System.out.println(Arrays.toString(numbers3));
 
-//        // Primitive and Non-Primitive
-//        Car[] cars = new Car[3];
-//        cars[0] = new Car("Honda", 1998);
-//        cars[1] = new Car("BMW", 2000);
-//        cars[2] = new Car("Mercedes", 2020);
-//        System.out.println(Arrays.toString(cars));
-
-        //numbers3[4] = 40;  // Exception
-
-
         // Her elemana ulasma
         for (int i = 0; i < numbers3.length; i++) {
             System.out.println(numbers3[i]);

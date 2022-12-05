@@ -1,5 +1,7 @@
 package SoruCozumleri;
 
+import java.util.Scanner;
+
 public class Cozumler {
 
     public static void main(String[] args) {
@@ -69,5 +71,34 @@ public class Cozumler {
         // Method 2: Using valueOf method
         String str2 = String.valueOf(ch);
         System.out.println(str2);
+
+        System.out.println("------------------------------ Ornek 5 --------------------------------------");
+
+        // Ornek 5 : Kullanici tarafindan girilen 5 pozitif sayinin toplamini hesaplayan
+        // Sayi 100 den buyuk ise hatali giris yapildigi ikazi vererek programi sonlandiran kodu yaziniz...
+
+        Double number, sum = 0.0;
+        // create an object of Scanner
+        Scanner input = new Scanner(System.in);
+
+        for (int i = 1; i < 6; ++i) {
+            System.out.print("Enter number " + i + " : ");
+            // takes input from the user
+            number = input.nextDouble();
+
+            // if number is negative
+            // continue statement is executed
+            if (number <= 0.0) {
+                continue;
+            }
+            if (number > 100){
+                System.out.println("Hatali giris yaptiniz...");
+                break;
+            }
+
+            sum += number;
+        }
+        System.out.println("Sum = " + sum);
+        input.close();
     }
 }
