@@ -48,7 +48,8 @@ public class Array_Demo {
         System.out.println(Arrays.deepToString(numberList));
 
         int[][] numberList2 = { { 10,20,30 },
-                { 40,50,60 } };
+                                { 40,50,60 }
+                              };
 
         System.out.println("numberList2[0] = " + Arrays.toString(numberList2[0]));
 

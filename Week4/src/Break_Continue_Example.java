@@ -6,6 +6,5 @@ public class Break_Continue_Example {
         // Sayi 100 den buyuk ise hatali giris yapildigi ikazi vererek programi sonlandiran kodu yaziniz...
 
 
-
     }
 }
