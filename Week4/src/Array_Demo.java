@@ -32,16 +32,19 @@ public class Array_Demo {
 
         // Her elemana ulasma
         for (int i = 0; i < numbers3.length; i++) {
-            System.out.print(numbers3[i]);
+            System.out.println(numbers3[i]);
         }
 
         for (int n : numbers3) {
-            System.out.print(n);
+            System.out.println(n);
         }
 
         // Siralandirma
         Arrays.sort(numbers3);
         System.out.println("sorted "+ Arrays.toString(numbers3));
+
+        // Binary Search
+        System.out.println("Arrays.binarySearch(numbers, 10) = " + Arrays.binarySearch(numbers,20 ));
 
         // 2 boyutlu Array
 
