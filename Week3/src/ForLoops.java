@@ -10,7 +10,7 @@ public class ForLoops {
         // Nested For Loops
         for (int row = 1; row <= 4; row++) {
 
-            for (int col = 1; col <= 4 ; col++) {
+            for (int col = row; col <= 4 ; col++) {
                 System.out.print("*");
             }
 
