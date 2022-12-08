@@ -5,3 +5,7 @@
 *.xml
 *.png
 *.jpg
+/Week3/target/classes/Cozumler/DoWhileOrnek.class
+/Week3/target/classes/Cozumler/ForOrnek.class
+/Week3/target/classes/Cozumler/TernaryOperatorOrnek.class
+/Week3/target/classes/Cozumler/WhileOrnek.class
