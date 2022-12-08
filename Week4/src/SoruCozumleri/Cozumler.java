@@ -22,7 +22,22 @@ public class Cozumler {
 
         System.out.println("------------------------------ Ornek 2 --------------------------------------");
 
-        // Ornek 2 : Verilen bir dizide her elemanin kac defa tekrar ettigini bulan programi yaziniz..
+        // Ornek 2 : Verilen bir Array de tekrar eden elemanlari yazdirin...
+        int [] numbers2 = new int [] {2, 4, 6, 8, 4, 6, 10, 10};
+        System.out.println("Duplicate elements in given array are: ");
+        //Tum elemanlari birbirleri ile karsilastiralim...
+        for(int i = 0; i < numbers2.length; i++) {
+            for(int j = i + 1; j < numbers2.length; j++) {
+                if(numbers2[i] == numbers2[j]) {
+                    //Tekrar eden elemanlari yazdiralim
+                    System.out.println(numbers2[j]);
+                }
+            }
+        }
+
+        System.out.println("------------------------------ Ornek 3 --------------------------------------");
+
+        // Ornek 3 : Verilen bir dizide her elemanin kac defa tekrar ettigini bulan programi yaziniz..
         int [] numbers = new int [] {2, 2, 3, 4, 5, 5, 5, 3, 2, 4};
 
         int [] frequency = new int [numbers.length];
@@ -46,20 +61,7 @@ public class Cozumler {
                 System.out.println("Element: "+numbers[i] + " Frequency: " + frequency[i]);
         }
 
-        System.out.println("------------------------------ Ornek 3 --------------------------------------");
 
-        // Ornek 3 : Verilen bir Array de tekrar eden elemanlari yazdirin...
-        int [] numbers2 = new int [] {2, 4, 6, 8, 4, 6, 10, 10};
-        System.out.println("Duplicate elements in given array are: ");
-        //Tum elemanlari birbirleri ile karsilastiralim...
-        for(int i = 0; i < numbers2.length; i++) {
-            for(int j = i + 1; j < numbers2.length; j++) {
-                if(numbers2[i] == numbers2[j]) {
-                    //Tekrar eden elemanlari yazdiralim
-                    System.out.println(numbers2[j]);
-                }
-            }
-        }
 
         System.out.println("------------------------------ Ornek 4 --------------------------------------");
 
