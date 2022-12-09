@@ -25,16 +25,26 @@ public class Array_Demo {
             System.out.println(numbers3[i]);
         }
 
-        for (int n : numbers3) {
-            System.out.println(n);
-        }
+//        for (int n : numbers3) {
+//            System.out.println(n);
+//        }
 
         // Siralandirma
         Arrays.sort(numbers3);
         System.out.println("sorted "+ Arrays.toString(numbers3));
 
+        System.out.println("Arrays.equals(numbers, numbers2) = " + Arrays.equals(numbers, numbers2));
+
         // Binary Search
         System.out.println("Arrays.binarySearch(numbers, 10) = " + Arrays.binarySearch(numbers,20 ));
+
+        //  1  2  3  4  5  6  7  8  9  10
+        //                          ^
+
+
+        // 9
+
+
 
 
 
