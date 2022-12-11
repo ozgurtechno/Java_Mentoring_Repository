@@ -8,7 +8,6 @@ public class Methods {
 
         System.out.println(Arrays.toString(x));
 
-
 //        System.out.println(calculator(12,4,"bol"));
 //        System.out.println(calculator(12,4,"topla"));
 //        System.out.println(calculator(12,4,"cikar"));
