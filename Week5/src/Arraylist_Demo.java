@@ -69,5 +69,11 @@ public class Arraylist_Demo {
         numberList2.add(nubbb);
         numberList2.add(kx);
 
+        // Soru - 1 : Bir Array i nasil Arraylist e donusturebilriz?....
+        String[] arr = { "Java", "Python", "C++" };
+
+        // Soru - 2 : Bir Arraylist i Array e nasil donustururuz?.....
+        ArrayList<String> diller = new ArrayList<>(Arrays.asList("Java", "Phyton", "C++"));
+
     }
 }

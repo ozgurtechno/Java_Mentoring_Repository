@@ -29,11 +29,6 @@ public class Array_Questions {
         // Time Complexity // Space Complexity
 
 
-        // Ornek 3 : Verilen bir dizide her elemanin kac defa tekrar ettigini bulan programi yaziniz..
-        int [] numbers = new int [] {2, 2, 3, 4, 5, 5, 5, 3, 2, 4};
-
-        // Ornek 4 : Verilen bir Character Array ini String e ceviren programi yaziniz...
-        char[] ch = {'g', 'o', 'o', 'd', ' ', 'm', 'o', 'r', 'n', 'i', 'n', 'g'};
 
     }
 }
