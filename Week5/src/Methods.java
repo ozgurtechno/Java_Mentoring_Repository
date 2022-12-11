@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Methods {
     public static void main(String[] args) {
@@ -13,6 +14,14 @@ public class Methods {
 //        System.out.println(calculator(12,4,"cikar"));
 //        System.out.println(calculator(12,4,"carp"));
 //        System.out.println(calculator(12,4,"carpg"));
+
+        // Method Soru 1 - Bir String de tum sesli harfleri sayan bir method yaziniz....
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input the string: ");
+        String str = in.nextLine();
+
+        // Method Soru 2 - Verilen 2 karakter arasinda kalan karakterleri yazdiran bir method yaziniz....
+        // print_Chars('(', 'z', 20);
 
     }
     public static int[] arrayUret(int a, int b){
