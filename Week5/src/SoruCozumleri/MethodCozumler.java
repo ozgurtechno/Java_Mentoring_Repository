@@ -1,23 +1,57 @@
 package SoruCozumleri;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MethodCozumler {
 
     public static void main(String[] args) {
 
-        // Method Soru 1 - Bir String de tum sesli harfleri sayan bir method yaziniz....
+        System.out.println("------------------------------ Ornek 1 --------------------------------------");
+
+        // Method Soru 1 - TODO Bir String de tum sesli harfleri sayan bir method yaziniz....
         Scanner in = new Scanner(System.in);
         System.out.print("Input the string: ");
         String str = in.nextLine();
         System.out.println(count_Vowels(str));
 
 
+        System.out.println("------------------------------ Ornek 2 --------------------------------------");
 
-        // Method Soru 2 - Verilen 2 karakter arasinda kalan karakterleri yazdiran bir method yaziniz....
+        // Method Soru 2 - TODO Verilen 2 karakter arasinda kalan karakterleri yazdiran bir method yaziniz....
         print_Chars('(', 'z', 20);
 
 
+        System.out.println("------------------------------ Ornek 3 --------------------------------------");
+
+        // Method Soru 3 : TODO Verilen bir dizide her elemanin kac defa tekrar ettigini veren bir method yaziniz..
+        int [] numbers = new int [] {2, 2, 3, 4, 5, 5, 5, 3, 2, 4};
+        System.out.println(Arrays.toString(findFrequency(numbers)));
+        //Her elemanin kac defa tekrar ettigini yazdiralim
+        for(int i = 0; i < findFrequency(numbers).length; i++){
+            if(findFrequency(numbers)[i] != -1)
+                System.out.println("Element: "+numbers[i] + " Frequency: " + findFrequency(numbers)[i]);
+        }
+
+    }
+
+    private static int[] findFrequency(int[] numbers) {
+
+        int[] resultArray = new int [numbers.length];
+        int counted = -1;
+        for(int i = 0; i < numbers.length; i++){
+            int count = 1;
+            for(int j = i+1; j < numbers.length; j++){
+                if(numbers[i] == numbers[j]){
+                    count++;
+                    //Ayni elemani bir daha saymamak icin ona -1 atiyoruz...
+                    resultArray[j] = counted;
+                }
+            }
+            if(resultArray[i] != counted)
+                resultArray[i] = count;
+        }
+        return resultArray;
     }
 
     public static int count_Vowels(String str)

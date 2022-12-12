@@ -35,34 +35,6 @@ public class Cozumler {
             }
         }
 
-        System.out.println("------------------------------ Ornek 3 --------------------------------------");
-
-        // Ornek 3 : Verilen bir dizide her elemanin kac defa tekrar ettigini bulan programi yaziniz..
-        int [] numbers = new int [] {2, 2, 3, 4, 5, 5, 5, 3, 2, 4};
-
-        int [] frequency = new int [numbers.length];
-        int counted = -1;
-        for(int i = 0; i < numbers.length; i++){
-            int count = 1;
-            for(int j = i+1; j < numbers.length; j++){
-                if(numbers[i] == numbers[j]){
-                    count++;
-                    //Ayni elemani bir daha saymamak icin ona -1 atiyoruz...
-                    frequency[j] = counted;
-                }
-            }
-            if(frequency[i] != counted)
-                frequency[i] = count;
-        }
-
-        //Her elemanin kac defa tekrar ettigini yazdiralim
-        for(int i = 0; i < frequency.length; i++){
-            if(frequency[i] != counted)
-                System.out.println("Element: "+numbers[i] + " Frequency: " + frequency[i]);
-        }
-
-
-
         System.out.println("------------------------------ Ornek 4 --------------------------------------");
 
         // Ornek 4 : Verilen bir Character Array ini String e ceviren programi yaziniz...
