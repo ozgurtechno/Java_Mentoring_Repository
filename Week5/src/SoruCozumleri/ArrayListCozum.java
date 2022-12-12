@@ -9,7 +9,7 @@ public class ArrayListCozum {
 
         System.out.println("------------------------------ Ornek 1 --------------------------------------");
 
-        // Soru - 1 : Bir Array i nasil Arraylist e donusturebilriz?....
+        // TODO Soru - 1 : Bir Array i nasil Arraylist e donusturebilriz?....
         String[] arr = { "Java", "Python", "C++" };
         System.out.print("Array: ");
 
@@ -23,7 +23,7 @@ public class ArrayListCozum {
 
         System.out.println("------------------------------ Ornek 2 --------------------------------------");
 
-        // Soru - 2 : Bir Arraylist i Array e nasil donustururuz?.....
+        // TODO Soru - 2 : Bir Arraylist i Array e nasil donustururuz?.....
         ArrayList<String> diller = new ArrayList<>(Arrays.asList("Java", "Phyton", "C++"));
         System.out.println("ArrayList: " + diller);
 

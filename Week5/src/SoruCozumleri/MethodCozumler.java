@@ -12,6 +12,8 @@ public class MethodCozumler {
         String str = in.nextLine();
         System.out.println(count_Vowels(str));
 
+
+
         // Method Soru 2 - Verilen 2 karakter arasinda kalan karakterleri yazdiran bir method yaziniz....
         print_Chars('(', 'z', 20);
 

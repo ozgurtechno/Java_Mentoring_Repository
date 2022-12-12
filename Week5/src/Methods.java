@@ -15,12 +15,16 @@ public class Methods {
 //        System.out.println(calculator(12,4,"carp"));
 //        System.out.println(calculator(12,4,"carpg"));
 
-        // Method Soru 1 - Bir String de tum sesli harfleri sayan bir method yaziniz....
+
+
+        // TODO Method Soru 1 - Bir String de tum sesli harfleri sayan bir method yaziniz....
         Scanner in = new Scanner(System.in);
         System.out.print("Input the string: ");
         String str = in.nextLine();
 
-        // Method Soru 2 - Verilen 2 karakter arasinda kalan karakterleri yazdiran bir method yaziniz....
+
+
+        // TODO Method Soru 2 - Verilen 2 karakter arasinda kalan karakterleri yazdiran bir method yaziniz....
         // print_Chars('(', 'z', 20);
 
     }
