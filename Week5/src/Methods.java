@@ -16,16 +16,17 @@ public class Methods {
 //        System.out.println(calculator(12,4,"carpg"));
 
 
-
         // TODO Method Soru 1 - Bir String de tum sesli harfleri sayan bir method yaziniz....
         Scanner in = new Scanner(System.in);
         System.out.print("Input the string: ");
         String str = in.nextLine();
 
-
-
         // TODO Method Soru 2 - Verilen 2 karakter arasinda kalan karakterleri yazdiran bir method yaziniz....
         // print_Chars('(', 'z', 20);
+
+
+        // TODO Method Soru 3 : Verilen bir dizide her elemanin kac defa tekrar ettigini veren bir method yaziniz..
+        int [] numbers = new int [] {2, 2, 3, 4, 5, 5, 5, 3, 2, 4};
 
     }
     public static int[] arrayUret(int a, int b){
