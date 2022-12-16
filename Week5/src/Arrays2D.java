@@ -1,11 +1,16 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 
 public class Arrays2D {
 
     public static void main(String[] args) {
 
         // 2 boyutlu Array
-        double[][] doubleValues = {{1.5, 2.6, 3.7}, {7.5, 6.4, 5.3}, {9.8,  8.7, 7.6}, {3.6, 5.7, 7.8}};
+        double[][] doubleValues = {{1.5, 2.6, 3.7},
+                                   {7.5, 6.4, 5.3},
+                                    {9.8,  8.7, 7.6},
+                                    {3.6, 5.7, 7.8}};
 
         String[][] stringValues;
         stringValues = new String[][] {{"working", "with"}, {"2D", "arrays"}, {"is", "fun"}};
@@ -23,19 +28,22 @@ public class Arrays2D {
                                 { 40,50,60 }
                               };
 
-        System.out.println("numberList2[0] = " + Arrays.toString(numberList2[0]));
+        // 2D arrayi nasil Arraylist e ceviririz?
+
+        System.out.println("numberList2[0] = " + Arrays.toString(numberList2[1]));
 
         // 2D Array elemanlarina tek tek ulasma...
-        for(int outer = 0; outer < numberList2.length; outer++){
-            System.out.println("The outer index is: " + outer);
-            for(int inner = 0; inner < numberList2[outer].length; inner++){
+        for(int i = 0; i < numberList2.length; i++){
+
+            System.out.println("The i index is: " + i);
+
+            for(int inner = 0; inner < numberList2[i].length; inner++){
+
                 System.out.println("\tThe inner index is: " + inner);
-                System.out.println("\tArray Element is: "+numberList[outer][inner]);
+                System.out.println("\tArray Element is: "+numberList[i][inner]);
+
             }
         }
-
-
-
 
     }
 }

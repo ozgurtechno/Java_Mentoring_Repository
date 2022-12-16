@@ -9,7 +9,11 @@ public class Methods {
 
         System.out.println(Arrays.toString(x));
 
-//        System.out.println(calculator(12,4,"bol"));
+        System.out.println("calculator(12,4,'+') = " + calculator(12, 4, '+'));
+
+        // CRUD - Create / Read / Update / Delete
+
+//        System.out.println(calculator(12,4,'+'));
 //        System.out.println(calculator(12,4,"topla"));
 //        System.out.println(calculator(12,4,"cikar"));
 //        System.out.println(calculator(12,4,"carp"));
@@ -29,20 +33,21 @@ public class Methods {
         int [] numbers = new int [] {2, 2, 3, 4, 5, 5, 5, 3, 2, 4};
 
     }
+
     public static int[] arrayUret(int a, int b){
-        int[] result = new int[4];
-        result[0] = a;
-        result[1] = b;
-        return result;
+        int[] renamed = new int[4];
+        renamed[0] = a;
+        renamed[1] = b;
+        return renamed;
     }
 
-    public static double calculator(int a, int b, String islem){
+    public static double calculator(int a, int b, char islem){  // + -
 
         switch (islem){
-            case "topla" : return a + b;
-            case "cikar" : return a - b;
-            case "carp" : return a * b;
-            case "bol" : return a / b;
+            case 43 : return a + b;
+            case '-' : return a - b;
+            case '*' : return a * b;
+            case '/' : return a / b;
             default : System.out.println("Yanlis giris yaptiniz...");
         }
         return 0;

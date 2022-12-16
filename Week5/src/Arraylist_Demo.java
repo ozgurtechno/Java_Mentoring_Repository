@@ -1,13 +1,11 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Arraylist_Demo {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> numbers = new ArrayList<>(4);
+         int[] number = new int[10];
+        ArrayList<Integer> numbers = new ArrayList<>(4);  //      \  \  \  \ Big O notation... Time complexity | Space Complexity
         numbers.add(10);
         numbers.add(20);
         numbers.add(30);
@@ -17,6 +15,15 @@ public class Arraylist_Demo {
 
         ArrayList<Integer> numbers2 = new ArrayList<>(numbers);
         System.out.println(numbers2);
+
+
+        int[] numbers6 = {1,2,3,4};
+        Integer[] numbers7 = {1,2,3,4};
+        ArrayList<Integer> deneme = new ArrayList<>(Arrays.asList(numbers7));
+        for (Integer integer : deneme) {
+            System.out.println(integer);
+        }
+
 
         ArrayList<Integer> numbers3 = new ArrayList<>(Arrays.asList(10,20,30));
         ArrayList<Integer> numbers4 = new ArrayList<>(List.of(30,20,10));
@@ -49,6 +56,7 @@ public class Arraylist_Demo {
         numbers.removeAll(numbers2);
         System.out.println("numbers = " + numbers);
 
+        // Henuz Interface ogrenmediginiz icin burada bahsetmem gereken cok onemli bir konuya girmiyorum...
         Collections.sort(numbers2);
         System.out.println("numbers4 = " + numbers2);
 

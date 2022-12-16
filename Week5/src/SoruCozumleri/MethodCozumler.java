@@ -19,7 +19,7 @@ public class MethodCozumler {
         System.out.println("------------------------------ Ornek 2 --------------------------------------");
 
         // Method Soru 2 - TODO Verilen 2 karakter arasinda kalan karakterleri yazdiran bir method yaziniz....
-        print_Chars('(', 'z', 20);
+        print_Chars('(', 'z');
 
 
         System.out.println("------------------------------ Ornek 3 --------------------------------------");
@@ -57,21 +57,20 @@ public class MethodCozumler {
     public static int count_Vowels(String str)
     {
         int count = 0;
-        for (int i = 0; i < str.length(); i++)
-        {
+        for (int i = 0; i < str.length(); i++) {
+
             if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i'
-                    || str.charAt(i) == 'o' || str.charAt(i) == 'u')
-            {
+                    || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
                 count++;
             }
         }
         return count;
     }
 
-    public static void print_Chars(char char1, char char2, int n) {
-        for (int ctr = 1; char1 <= char2; ctr++, char1++) {
-            System.out.print(char1 + " ");
-            if (ctr % n == 0) System.out.println("");
+    public static void print_Chars(char char1, char char2) {
+
+        for ( int i = char1 ; i <= char2; i++) {
+            System.out.print((char) i + " ");
         }
         System.out.print("\n");
     }
