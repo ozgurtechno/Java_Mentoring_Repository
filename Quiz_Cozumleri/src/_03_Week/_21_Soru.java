@@ -13,8 +13,6 @@ public class _21_Soru {
 		    else
         System.out.println("esit degil");
 
-
-
         Cevap = "Hata verir".
 
      */

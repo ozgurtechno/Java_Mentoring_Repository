@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class Arraylist_Demo {
 
@@ -18,7 +19,8 @@ public class Arraylist_Demo {
         System.out.println(numbers2);
 
         ArrayList<Integer> numbers3 = new ArrayList<>(Arrays.asList(10,20,30));
-//        ArrayList<Integer> numbers4 = new ArrayList<>(List.of(30,20,10));
+        ArrayList<Integer> numbers4 = new ArrayList<>(List.of(30,20,10));
+
 
 //        ArrayList<Car> cars = new ArrayList<>();
 //        cars.add(new Car("Honda", 2002));

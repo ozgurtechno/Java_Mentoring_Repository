@@ -2,6 +2,8 @@ package SoruCozumleri;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class ArrayListYedekSoru {
     public static void main(String[] args) {
@@ -13,6 +15,7 @@ public class ArrayListYedekSoru {
         //    Tersten hali :   [Kanada, Italya, Fransa, Almanya, Türkiye]
 
         terstenSirala(ulkeEkle());
+        terstenSirala2(ulkeEkle());
 
     }
     public static ArrayList<String> ulkeEkle(){
@@ -30,5 +33,10 @@ public class ArrayListYedekSoru {
             tersi.add(ulke.get(i));
         }
         System.out.println(tersi);
+    }
+
+    public static void terstenSirala2(ArrayList<String> ulke){
+        Collections.reverse(ulke);
+        System.out.println(ulke);
     }
 }
