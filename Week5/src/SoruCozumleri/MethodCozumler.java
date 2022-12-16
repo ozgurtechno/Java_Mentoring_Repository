@@ -69,8 +69,8 @@ public class MethodCozumler {
 
     public static void print_Chars(char char1, char char2) {
 
-        for ( int i = char1 ; i <= char2; i++) {
-            System.out.print((char) i + " ");
+        for (char i = char1 ; i <= char2; i++) {
+            System.out.print(i + " ");
         }
         System.out.print("\n");
     }
