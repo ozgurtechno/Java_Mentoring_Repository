@@ -24,23 +24,13 @@ public class Arraylist_Demo {
             System.out.println(integer);
         }
 
-
         ArrayList<Integer> numbers3 = new ArrayList<>(Arrays.asList(10,20,30));
         ArrayList<Integer> numbers4 = new ArrayList<>(List.of(30,20,10));
 
 
-//        ArrayList<Car> cars = new ArrayList<>();
-//        cars.add(new Car("Honda", 2002));
-//        cars.add(new Car("Honda", 2002));
-//        cars.add(new Car("Honda", 2002));
-
         for (int i = 0; i < numbers.size(); i++) {
             System.out.println(numbers.get(i));
         }
-
-//        for (Car car : cars) {
-//            System.out.println(car);
-//        }
 
         numbers3.addAll(numbers);
         System.out.println("numbers3 = " + numbers3);

@@ -25,34 +25,50 @@ public class MethodCozumler {
         System.out.println("------------------------------ Ornek 3 --------------------------------------");
 
         // Method Soru 3 : TODO Verilen bir dizide her elemanin kac defa tekrar ettigini veren bir method yaziniz..
-        int [] numbers = new int [] {2, 2, 3, 4, 5, 5, 5, 3, 2, 4};
+        var numbers = new int [] {2, 2, 3, 4, 5, 5, 5, 3, 2, 4};
+                               // int[] resultArray = new int{ 2 ,-1, 2, 2, 3, -1,-1,-1, -1 }
+        var nnnnn = findFrequency(numbers);
+        System.out.println(Arrays.toString(numbers));
         System.out.println(Arrays.toString(findFrequency(numbers)));
         //Her elemanin kac defa tekrar ettigini yazdiralim
         for(int i = 0; i < findFrequency(numbers).length; i++){
+
             if(findFrequency(numbers)[i] != -1)
+
                 System.out.println("Element: "+numbers[i] + " Frequency: " + findFrequency(numbers)[i]);
         }
 
     }
 
+    // 1 , 2, 1, 3, 5 , 1
+    // i
+    //        j
+
     private static int[] findFrequency(int[] numbers) {
 
-        int[] resultArray = new int [numbers.length];
-        int counted = -1;
+        int[] resultArray = new int [numbers.length]; // Dondurecegimiz sonuc array i
+
+        var sayildi = -1; // Sayilan elemanlara bunu atiyacam
+
         for(int i = 0; i < numbers.length; i++){
-            int count = 1;
+
+            int count = 1;  //
+
             for(int j = i+1; j < numbers.length; j++){
+
                 if(numbers[i] == numbers[j]){
+
                     count++;
                     //Ayni elemani bir daha saymamak icin ona -1 atiyoruz...
-                    resultArray[j] = counted;
+                    resultArray[j] = sayildi;
                 }
             }
-            if(resultArray[i] != counted)
+            if(resultArray[i] != sayildi)
                 resultArray[i] = count;
         }
         return resultArray;
     }
+
 
     public static int count_Vowels(String str)
     {
