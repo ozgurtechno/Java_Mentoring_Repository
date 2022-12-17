@@ -36,7 +36,7 @@ public class Class_Demo {
             car.start();
         }
 
-
+        // TODO Class1 : Bir OKUL Class i olusturun,  bu okulda ogretmen, ogrenci, dersler vb objeler bulunsun...
 
 
     }
