@@ -11,17 +11,19 @@ public class HashMap_Demo {
         map.put("Key2", "Value2");
         map.put("Key1", "Value3");
 
+        HashMap<Integer, Character> map2 = new HashMap<>();
+
         // Key vasitasiyla Value ya ulasmak...
         map.get("Key1");
 
         // Value vasitasiyla Key'e ulasmak normalde java da tanimli degildir... Sadece foreach dongusunde mevcuttur..
         getKey(map, "Value1");
+        getKey(map2, 'A');
 
         // Bir Map icerisinde dalosmak...
 
         for (int i = 0; i < map.size(); i++) {
             // Maplerde index olmaz... O yuzden for dongusu kullanmak mantikli degildir....
-            System.out.println("map.get(i) = " + map.get(i));
             System.out.println("map.get(\"Key1\") = " + map.get("Key1"));
         }
 
@@ -35,6 +37,11 @@ public class HashMap_Demo {
             System.out.println(each.getValue());
         }
 
+        // entrySet
+        var entries = map.entrySet();
+
+        // TODO Basit bir soru....
+
         // TODO MapSoru -> Verilen Bir String de her harfin kac defa tekrar ettigini bulan bir method yaziniz...
         String word = "Merhaba Dunya";
 
@@ -42,9 +49,19 @@ public class HashMap_Demo {
         map.forEach((k,v) -> System.out.println(k + v));
     }
 
+
+
+
+
+
+
+
+
+
+
+
     // <K , V> degerleri Java da GENERICS olarak genel tip leri tanimlamak icin kullanilir...
-    public static <K, V> K getKey(Map<K, V> map, V value)
-    {
+    public static <K, V> K getKey(Map<K, V> map, V value) {
         for (Map.Entry<K, V> entry: map.entrySet())
         {
             if (value.equals(entry.getValue())) {
@@ -52,5 +69,9 @@ public class HashMap_Demo {
             }
         }
         return null;
+    }
+
+    public <T> void getNumber(T value){
+        System.out.println(value);
     }
 }

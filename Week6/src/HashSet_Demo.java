@@ -8,6 +8,7 @@ public class HashSet_Demo {
 
         HashSet<Integer> numbers = new HashSet<>();
         numbers.add(4);
+        numbers.add(20);
         numbers.add(7);
         numbers.add(8);
         numbers.add(8);
@@ -16,10 +17,11 @@ public class HashSet_Demo {
 
         // Set Elemanlarina ulasmak icin index kullanilmaz...
         // numbers.get();
+        System.out.println("Ekleme sirasi bozulur...");
         for (Integer number : numbers) {
             if (number == null) continue;
-            if (number == 4) System.out.println(number);
-            System.out.print(number); // Insert sirasi onemli degildir...Sirali veri alinamaz...
+            if (number == 4) System.out.println(number );
+            System.out.print(number+ " | "); // Insert sirasi onemli degildir...Sirali veri alinamaz...
         }
 
         System.out.println();
@@ -35,6 +37,7 @@ public class HashSet_Demo {
 
         LinkedHashSet<Integer> linkedNumbers = new LinkedHashSet<>();
         linkedNumbers.add(4);
+        linkedNumbers.add(20);
         linkedNumbers.add(7);
         linkedNumbers.add(8);
         linkedNumbers.add(8);
@@ -51,6 +54,7 @@ public class HashSet_Demo {
 
         TreeSet<Integer> treeSet = new TreeSet<>();
         treeSet.add(4);
+        treeSet.add(20);
         treeSet.add(7);
         treeSet.add(8);
         treeSet.add(8);

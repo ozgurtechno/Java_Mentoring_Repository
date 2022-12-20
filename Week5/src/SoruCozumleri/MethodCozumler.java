@@ -1,5 +1,6 @@
 package SoruCozumleri;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -26,7 +27,7 @@ public class MethodCozumler {
 
         // Method Soru 3 : TODO Verilen bir dizide her elemanin kac defa tekrar ettigini veren bir method yaziniz..
         var numbers = new int [] {2, 2, 3, 4, 5, 5, 5, 3, 2, 4};
-                               // int[] resultArray = new int{ 2 ,-1, 2, 2, 3, -1,-1,-1, -1 }
+        // int[] resultArray = new int{ 3 ,-1, 2, 2, 3, -1,-1,-1, -1 }
         var nnnnn = findFrequency(numbers);
         System.out.println(Arrays.toString(numbers));
         System.out.println(Arrays.toString(findFrequency(numbers)));
@@ -48,7 +49,7 @@ public class MethodCozumler {
 
         int[] resultArray = new int [numbers.length]; // Dondurecegimiz sonuc array i
 
-        var sayildi = -1; // Sayilan elemanlara bunu atiyacam
+        int sayildi = -1; // Sayilan elemanlara bunu atiyacam
 
         for(int i = 0; i < numbers.length; i++){
 
