@@ -16,12 +16,13 @@ public class HashSet_Demo {
         numbers.add(null);
 
         // Set Elemanlarina ulasmak icin index kullanilmaz...
-        // numbers.get();
+        // Hash Function kullanilarak hafizaya yazilir, boylece veriye ulasmak O(1) zamanda olur...
+        // numbers.get(0);
         System.out.println("Ekleme sirasi bozulur...");
         for (Integer number : numbers) {
-            if (number == null) continue;
-            if (number == 4) System.out.println(number );
-            System.out.print(number+ " | "); // Insert sirasi onemli degildir...Sirali veri alinamaz...
+            //if (number == null) continue;
+//            if (number == 4) System.out.println(number );
+            System.out.print(number+ " | "); // Insert sirasi onemli degildir...Sirali veri alinamaz...RANDOM
         }
 
         System.out.println();
@@ -42,7 +43,7 @@ public class HashSet_Demo {
         linkedNumbers.add(8);
         linkedNumbers.add(8);
         linkedNumbers.add(5);
-        linkedNumbers.add(null);
+        linkedNumbers.add(null); // null verilere izin veriliyor...
 
         for (Integer number : linkedNumbers) {
             System.out.print(number + " | "); // girilen sirada elemanlara ulasilabilir
@@ -66,7 +67,25 @@ public class HashSet_Demo {
                                               // Ama elemanlar otomatik olarak sort edilir...
         }
 
+        // Zinhar kullanmayin....
+        HashSet hs = new HashSet<>();
+        hs.add(12);
+        hs.add("12");
+        hs.add(3.5);
+        hs.add(true);
+        System.out.println(hs);
 
+        // Quiz
+        HashSet<String> hs1 = new HashSet<>();
+        hs1.add("Burak");
+        hs1.add("Ömer");
+        hs1.add("Fatih");
+        System.out.println("Remove "+hs1.remove("Burak"));
+
+        if (hs1.remove(0)) {
+            System.out.println("Silindi");
+        } else
+            System.out.println("Böyle bir veri yok.");
 
 
     }

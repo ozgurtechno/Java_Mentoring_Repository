@@ -1,4 +1,6 @@
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -7,18 +9,24 @@ public class HashMap_Demo {
 
         HashMap<String, String> map = new HashMap<>();
 
-        map.put("Key1", "Value1");
+        map.put("Key1", "Value1");   // int hashcode(String key){ verilen key neyse adres ona gore belirlenir, key ayni oldugu muddetce geriye ayni deger doner     }
         map.put("Key2", "Value2");
         map.put("Key1", "Value3");
 
-        HashMap<Integer, Character> map2 = new HashMap<>();
+        HashMap<Character, Integer> map2 = new HashMap<>();
+        map2.put('A', 12);
+        map2.put('B',9);
 
         // Key vasitasiyla Value ya ulasmak...
         map.get("Key1");
+        System.out.println("map.get('A') = " + map2.get('A'));
 
-        // Value vasitasiyla Key'e ulasmak normalde java da tanimli degildir... Sadece foreach dongusunde mevcuttur..
-        getKey(map, "Value1");
-        getKey(map2, 'A');
+        HashMap<Character, HashSet<String>> ogrenciMap = new HashMap<>();
+        ogrenciMap.put('A', new HashSet<>(Arrays.asList("Ahmet", "Mehmet")));
+        System.out.println(ogrenciMap.get('A'));
+
+        // Value vasitasiyla Key'e ulasmak normalde java da tanimli degildir... Sadece foreach dongusunde yapilabilir..
+        getKey1(map2, 12);
 
         // Bir Map icerisinde dalosmak...
 
@@ -47,18 +55,19 @@ public class HashMap_Demo {
 
         // Bu method developer ogrencileri icin buraya konmustur.. Stream ile map icerisinde dolasmak...
         map.forEach((k,v) -> System.out.println(k + v));
+
+    } // --Main bitti...
+
+    static Character getKey1(HashMap<Character, Integer> map, Integer value){
+
+        for (Entry<Character, Integer> entry: map.entrySet())
+        {
+            if (value == entry.getValue()) {
+                return entry.getKey();
+            }
+        }
+        return null;
     }
-
-
-
-
-
-
-
-
-
-
-
 
     // <K , V> degerleri Java da GENERICS olarak genel tip leri tanimlamak icin kullanilir...
     public static <K, V> K getKey(Map<K, V> map, V value) {

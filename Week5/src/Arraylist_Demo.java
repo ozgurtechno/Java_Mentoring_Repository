@@ -30,6 +30,7 @@ public class Arraylist_Demo {
 
         for (int i = 0; i < numbers.size(); i++) {
             System.out.println(numbers.get(i));
+            if (numbers.get(i) == 3333) break;
         }
 
         numbers3.addAll(numbers);
@@ -75,5 +76,33 @@ public class Arraylist_Demo {
         // Soru - 2 : TODO Bir Arraylist i Array e nasil donustururuz?.....
         ArrayList<String> diller = new ArrayList<>(Arrays.asList("Java", "Phyton", "C++"));
 
+
+        // Quiz....
+        List arrayList=new ArrayList();
+        arrayList.add("a");
+        arrayList.add("b");
+        arrayList.add("c");
+        arrayList.add(1,"d");
+        System.out.println(arrayList);
+        System.out.println(arrayList.get(0));
+
+        List<Integer> elements = new ArrayList<>();
+        elements.add(10);
+        //int firstElmnt = elements.get(1);
+        //System.out.println(firstElmnt);
+
+        HashSet<String> hs1 = new HashSet<>();
+        hs1.add("Burak");
+        hs1.add("Ömer");
+        hs1.add("Fatih");
+
+        if (hs1.remove(0)) {
+            System.out.println("Silindi");
+        } else
+            System.out.println("Böyle bir veri yok."+"");
+
+
+
     }
+
 }
