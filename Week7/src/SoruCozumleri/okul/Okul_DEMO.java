@@ -16,7 +16,7 @@ public class Okul_DEMO {
 
         Course ders = new Course();
         ders.name = "Java";
-        //ders.teacher = teacher;
+        ders.teacher = teacher;
 
         Student student = new Student();
         student.adres = adres;
