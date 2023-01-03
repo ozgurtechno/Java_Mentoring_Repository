@@ -16,7 +16,20 @@ public class School {
         this.courses.add(course);
     }
 
+    // --------------------------------- Getter - Setter --------------------------------------------------------
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public List<Course> getCourses() {
+        return courses;
+    }
 
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
+    }
 }

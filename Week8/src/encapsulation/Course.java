@@ -14,10 +14,20 @@ public class Course {
         this.setMinScore(minScore);
     }
 
-    public void setMinScore(int minScore) {
+    // --------------------------------- Getter - Setter --------------------------------------------------------
+
+    public void setMinScore(int minScore) {  // Kurallarimi kendim belirliyorum...
         if (minScore < 50){
             return;
         }
         this.minScore = minScore;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
