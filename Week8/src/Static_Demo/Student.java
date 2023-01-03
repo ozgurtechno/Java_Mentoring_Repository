@@ -9,7 +9,7 @@ public class Student {
     private int schoolNumber;
     private int phoneNumber;
 
-//    public static int studentCount;
+    private static int studentCount;
 
     // --------------------------------- CONSTRUCTOR --------------------------------------------------------------------
 
@@ -19,27 +19,27 @@ public class Student {
         this.lastName = lastName;
         this.schoolNumber = schoolNumber;
         this.phoneNumber = phoneNumber;
-//        studentCount++;
+        studentCount++;
     }
 
     public Student(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-//        studentCount++;
+        studentCount++;
     }
 
     public Student(String firstName, String lastName, int phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
-//        studentCount++;
+        studentCount++;
     }
 
     // --------------------------------- METHODS --------------------------------------------------------------------
 
-    public void addStudent(String firstName, String lastName){
+    public static int getStudentCount(){
         // Bu classtan olusturulmus ogrenci miktarini nasil sayabilirim...
-//        studentCount++;
+        return studentCount;
     }
 
 
@@ -54,5 +54,40 @@ public class Student {
                 ", schoolNumber=" + schoolNumber +
                 ", phoneNumber=" + phoneNumber +
                 '}';
+    }
+
+    // --------------------------------- TO String Method ------------------------------------------------------------
+
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getSchoolNumber() {
+        return schoolNumber;
+    }
+
+    public void setSchoolNumber(int schoolNumber) {
+        this.schoolNumber = schoolNumber;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

@@ -19,9 +19,18 @@ public class Static_Demo {
         String girdi = scanner.next();
         int okulNo = UtilityClass.convertToInteger(girdi);
 
-        Student student = new Student("Ahmet", "Mehmet", okulNo);
+        Student student1 = new Student("Ahmet", "Mehmet", okulNo,999);
+        // student1.studentCount;
 
-        System.out.println(student);
+        Student student2 = new Student("Ahmet", "Mehmet", okulNo, 999);
+
+        System.out.println(Student.getStudentCount());
+
+
+
+
+
+        System.out.println(student1);
 
 
     }

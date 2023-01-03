@@ -30,7 +30,7 @@ public class SamePackage {
 //        System.out.println("private = " + human2.age);
 
         System.out.println("public = " + teacher.name);
-        System.out.println("protected = " + teacher.memories);
+//       System.out.println("protected = " + teacher.memories);
 //        System.out.println("default = " + teacher.nickName);
 //        System.out.println("private = " + teacher.age);
     }
