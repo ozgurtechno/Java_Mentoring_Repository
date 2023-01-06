@@ -17,21 +17,20 @@ public class Static_Demo {
 
         System.out.println("Lutfen Okul Numaranizi giriniz");
         String girdi = scanner.next();
+
         int okulNo = UtilityClass.convertToInteger(girdi);
 
-        Student student1 = new Student("Ahmet", "Mehmet", okulNo,999);
-        // student1.studentCount;
+        // Girilen 2 tane sayinin buyuk olanini en hizli nasil buluruz?
+        Math.max(12, 4);
 
-        Student student2 = new Student("Ahmet", "Mehmet", okulNo, 999);
+        Student student1 = new Student("Ahmet", "Mehmet", okulNo,999);
+        student1.Study();
+
+        Student student2 = new Student("Veli", "Ok", okulNo, 888);
+        student2.Study();
 
         System.out.println(Student.getStudentCount());
-
-
-
-
-
         System.out.println(student1);
-
 
     }
 }

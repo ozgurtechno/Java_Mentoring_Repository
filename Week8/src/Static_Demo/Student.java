@@ -4,12 +4,12 @@ public class Student {
 
     // --------------------------------- FIELDS --------------------------------------------------------------------
 
-    private String firstName;
+    private String firstName;   // Instance field - Her objeye ait
     private String lastName;
     private int schoolNumber;
     private int phoneNumber;
 
-    private static int studentCount;
+    private static int studentCount;  // Static Field
 
     // --------------------------------- CONSTRUCTOR --------------------------------------------------------------------
 
@@ -42,6 +42,10 @@ public class Student {
         return studentCount;
     }
 
+    public void Study(){  // Instance Method
+        System.out.println("Ders calismaya basladi...");
+    }
+
 
     // --------------------------------- TO String Method ------------------------------------------------------------
 
@@ -56,7 +60,7 @@ public class Student {
                 '}';
     }
 
-    // --------------------------------- TO String Method ------------------------------------------------------------
+    // --------------------------------- Getter-Setter ------------------------------------------------------------
 
 
     public String getFirstName() {
