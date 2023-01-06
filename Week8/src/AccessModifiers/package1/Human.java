@@ -2,6 +2,8 @@ package AccessModifiers.package1;
 
 public class Human {
 
+
+
     public String name;
     private int age;
     protected String memories;
