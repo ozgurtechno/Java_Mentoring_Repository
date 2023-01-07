@@ -1,5 +1,7 @@
 package Quiz7;
 
+import java.util.ArrayList;
+
 public class Q7 {
 //    public static void main(String args[]) {
 //

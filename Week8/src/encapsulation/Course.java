@@ -18,7 +18,7 @@ public class Course {
 
     public void setMinScore(int minScore) {  // Kurallarimi kendim belirliyorum...
         if (minScore < 50){
-            return;
+            throw new IllegalArgumentException("Deger 50 den kucuk olamaz");
         }
         this.minScore = minScore;
     }
@@ -30,4 +30,5 @@ public class Course {
     public void setName(String name) {
         this.name = name;
     }
+
 }

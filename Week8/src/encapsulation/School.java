@@ -12,8 +12,13 @@ public class School {
         this.name = name;
     }
 
+    public School(String name, List<Course> courses) {
+        this.name = name;
+        this.courses = courses;
+    }
+
     public void addCourse(Course course){
-        this.courses.add(course);
+        courses.add(course);
     }
 
     // --------------------------------- Getter - Setter --------------------------------------------------------
