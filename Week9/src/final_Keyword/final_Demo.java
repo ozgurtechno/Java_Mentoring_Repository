@@ -5,6 +5,8 @@ public class final_Demo {
     public static void main(String[] args) {
 
         String example = "String bir Final Class dir... Immutable";
+        example = "yeni kelime";
+        System.out.println(example); // Final Class
 
         final Cat cat = new Cat("Cirkin");
 
