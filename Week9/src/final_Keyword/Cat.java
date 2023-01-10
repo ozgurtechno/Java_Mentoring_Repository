@@ -11,6 +11,14 @@ public class Cat extends Animal{
 
     @Override
     public void tirmala() {
-        super.tirmala();
+        System.out.println("Cat sinifinda farkli bir islem yapmam gerekiyor...");
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "type='" + type + '\'' +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
