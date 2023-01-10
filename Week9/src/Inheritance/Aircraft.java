@@ -19,6 +19,7 @@ public class Aircraft extends ArmoredVehicle implements Flyable {
 
     @Override
     public void fly() {
+        // Bu oyunda ucagin ucma usulleri burada tanimlanacak...
         System.out.println("Ucak motor calistirdi ve ucusa basladi...");
     }
 

@@ -11,6 +11,10 @@ public class Inheritance_Demo {
         ArmoredVehicle ucak = new Aircraft("F-16",10000, "Jet Fuel", false, 4);
         ArmoredVehicle helikopter = new Helicopter("AC-110", 5000, "Jet Fuel", false, "Bomba1");
 
+//        ArmoredVehicle encapsulationExample = new ArmoredVehicle("sdvasd",12000, "twet",false);
+//        System.out.println(encapsulationExample);
+//        System.out.println(helikopter);
+
         Helicopter helicopter2 = new Helicopter("AC-120", 7000, "Jet Fuel", false, "Bomba2");
         helicopter2.fly();
 

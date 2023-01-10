@@ -16,6 +16,7 @@ public class Helicopter extends ArmoredVehicle implements Flyable {
     // ------------------------------ Methods --------------------------------------------------------
     @Override
     public void fly() {
+        // Bu oyunda helikopterin ucma usulleri burada tanimlanacak...
         System.out.println("Helikopter pervane calistirdi ve ucusa basladi...");
     }
 }

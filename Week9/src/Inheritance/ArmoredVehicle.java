@@ -10,8 +10,8 @@ public class ArmoredVehicle {
     // ------------------------------ Constructor --------------------------------------------------------
 
     public ArmoredVehicle(String name, int range, String fuelType, boolean hasPalette) {
+        this.setRange(range);
         this.name = name;
-        this.range = range;
         this.fuelType = fuelType;
         this.hasPalette = hasPalette;
     }
@@ -31,7 +31,9 @@ public class ArmoredVehicle {
     }
 
     public void setRange(int range) {
-        this.range = range;
+        if (range > 1000){
+            throw new IllegalArgumentException("Bu deger atanamaz");
+        }
     }
 
     public String getFuelType() {
