@@ -16,6 +16,6 @@ public class Helicopter extends ArmoredVehicle implements Flyable {
     // ------------------------------ Methods --------------------------------------------------------
     @Override
     public void fly() {
-        System.out.println("Helikopter pervane ile ucar...");
+        System.out.println("Helikopter pervane calistirdi ve ucusa basladi...");
     }
 }

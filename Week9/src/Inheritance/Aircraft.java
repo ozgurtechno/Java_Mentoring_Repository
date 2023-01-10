@@ -4,12 +4,12 @@ import interfaces.Flyable;
 
 public class Aircraft extends ArmoredVehicle implements Flyable {
 
-    private String airToAirMissiles;
+    private int airToAirMissiles;
 
 
     // ------------------------------ Constructor --------------------------------------------------------
 
-    public Aircraft(String name, int range, String fuelType, boolean hasPalette, String airToAirMissiles) {
+    public Aircraft(String name, int range, String fuelType, boolean hasPalette, int airToAirMissiles) {
         super(name, range, fuelType, hasPalette);
         this.airToAirMissiles = airToAirMissiles;
     }
@@ -19,6 +19,11 @@ public class Aircraft extends ArmoredVehicle implements Flyable {
 
     @Override
     public void fly() {
-        System.out.println("Ucak kanatlariyla ucar...");
+        System.out.println("Ucak motor calistirdi ve ucusa basladi...");
+    }
+
+    public void attackEnemy(){
+        System.out.println("Iskaladin..Bir daha dene...");
+        this.airToAirMissiles--;
     }
 }
