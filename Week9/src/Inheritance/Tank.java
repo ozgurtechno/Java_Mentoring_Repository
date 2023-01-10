@@ -15,4 +15,9 @@ public class Tank extends ArmoredVehicle implements Floatable {
         this.personnelCount = personnelCount;
         this.desructionPower = desructionPower;
     }
+
+//    @Override
+//    public void transformToFloat() {
+//        System.out.println("Override da edilebilir");
+//    }
 }

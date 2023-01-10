@@ -1,10 +1,10 @@
-package abstraction.interfaces2.solution;
+package abstraction.abstract_class.interfaces2.coupled;
 
 
 /**
  * Created by bsferreira on 10-04-2016.
  */
-public class RacingCar implements Vehicle{
+public class RacingCar {
 
     private final int maxFuel;
     private int remainingFuel;
@@ -15,9 +15,9 @@ public class RacingCar implements Vehicle{
         remainingFuel = maxFuel;
     }
 
-    @Override
-    public void accelerate() {
+    public void accelerate(){
         power++;
         remainingFuel--;
     }
+
 }

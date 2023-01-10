@@ -32,7 +32,7 @@ public class ArmoredVehicle {
 
     public void setRange(int range) {
         if (range > 1000){
-            throw new IllegalArgumentException("Bu deger atanamaz");
+            //throw new IllegalArgumentException("Bu deger atanamaz");
         }
     }
 

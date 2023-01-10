@@ -1,4 +1,4 @@
-package abstraction.interfaces2.solution;
+package abstraction.abstract_class.interfaces2.solution;
 
 
 /**
