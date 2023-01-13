@@ -11,8 +11,9 @@ public class Inheritance_Demo {
         ArmoredVehicle ucak = new Aircraft("F-16",10000, "Jet Fuel", false, 4);
         ArmoredVehicle helikopter = new Helicopter("AC-110", 5000, "Jet Fuel", false, "Bomba1");
 
-//        ArmoredVehicle encapsulationExample = new ArmoredVehicle("sdvasd",12000, "twet",false);
-//        System.out.println(encapsulationExample);
+        ArmoredVehicle armored = new ArmoredVehicle("sdvasd",12000, "twet",false);
+        armored.attack();
+//        System.out.println(armored);
 //        System.out.println(helikopter);
 
         Helicopter helicopter2 = new Helicopter("AC-120", 7000, "Jet Fuel", false, "Bomba2");
@@ -23,6 +24,6 @@ public class Inheritance_Demo {
 
         Aircraft ucak2 = new Aircraft("F-15",15000, "Jet Fuel", false, 6);
         ucak2.fly();
-        ucak2.attackEnemy();
+        ucak2.attack();
     }
 }

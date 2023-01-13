@@ -15,6 +15,12 @@ public class ArmoredVehicle {
         this.fuelType = fuelType;
         this.hasPalette = hasPalette;
     }
+    // ----------------------------- Methods ---------------------------------------------------------------
+
+    public void attack(){
+        System.out.println("jkdvnakjnfga");
+    }
+
 
     // ------------------------------ Getter Setter --------------------------------------------------------
 
@@ -32,7 +38,7 @@ public class ArmoredVehicle {
 
     public void setRange(int range) {
         if (range > 1000){
-            //throw new IllegalArgumentException("Bu deger atanamaz");
+            // throw new IllegalArgumentException("Bu deger atanamaz");
         }
     }
 

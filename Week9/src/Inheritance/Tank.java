@@ -2,11 +2,12 @@ package Inheritance;
 
 import interfaces.Floatable;
 
-public class Tank extends ArmoredVehicle implements Floatable {
+public class Tank extends ArmoredVehicle implements Floatable {  // IS_A Relation
 
     private String battleField;
     private int personnelCount;
     private int desructionPower;
+
 
 
     public Tank(String name, int range, String fuelType, boolean hasPalette, String battleField, int personnelCount, int desructionPower) {
@@ -20,4 +21,14 @@ public class Tank extends ArmoredVehicle implements Floatable {
 //    public void transformToFloat() {
 //        System.out.println("Override da edilebilir");
 //    }
+
+    @Override
+    public void attack() {
+        System.out.println("Tank atesleme yapti");
+    }
+
+
+
+
+
 }

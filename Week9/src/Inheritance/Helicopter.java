@@ -8,6 +8,7 @@ public class Helicopter extends ArmoredVehicle implements Flyable {
 
     // ------------------------------ Constructor --------------------------------------------------------
 
+
     public Helicopter(String name, int range, String fuelType, boolean hasPalette, String airToGroundMissiles) {
         super(name, range, fuelType, hasPalette);
         this.airToGroundMissiles = airToGroundMissiles;
@@ -18,5 +19,10 @@ public class Helicopter extends ArmoredVehicle implements Flyable {
     public void fly() {
         // Bu oyunda helikopterin ucma usulleri burada tanimlanacak...
         System.out.println("Helikopter pervane calistirdi ve ucusa basladi...");
+    }
+
+    @Override
+    public void attack() {
+        System.out.println("Havadan yere fuze atildi");
     }
 }
