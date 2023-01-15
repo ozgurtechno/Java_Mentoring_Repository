@@ -1,23 +1,23 @@
-package abstraction.abstract_class.interfaces2.solution;
+package abstraction.interfaces2.coupled;
 
 
 /**
  * Created by bsferreira on 10-04-2016.
  */
-public class RacingCar implements Vehicle{
+public class RacingCar {
 
     private final int maxFuel;
     private int remainingFuel;
     private int power;
 
-    public RacingCar(final int maxFuel) {
+    public RacingCar(final int maxFuel /* ,int count */) {
         this.maxFuel = maxFuel;
         remainingFuel = maxFuel;
     }
 
-    @Override
-    public void accelerate() {
+    public void accelerate(){
         power++;
         remainingFuel--;
     }
+
 }

@@ -1,4 +1,4 @@
-package abstraction.abstract_class.interfaces2.coupled;
+package abstraction.interfaces2.coupled;
 
 public class Demo {
 
@@ -7,5 +7,6 @@ public class Demo {
         RacingCar honda = new RacingCar(300);
 
         Pilot driver = new Pilot();
+        driver.increaseSpeed();
     }
 }

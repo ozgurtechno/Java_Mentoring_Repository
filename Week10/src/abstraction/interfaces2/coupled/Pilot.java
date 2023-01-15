@@ -1,4 +1,4 @@
-package abstraction.abstract_class.interfaces2.coupled;
+package abstraction.interfaces2.coupled;
 
 
 /**

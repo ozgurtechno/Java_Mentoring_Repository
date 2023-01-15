@@ -1,4 +1,4 @@
-package abstraction.abstract_class.sorular;
+package sorular;
 
 public class Cevap3 {
 
