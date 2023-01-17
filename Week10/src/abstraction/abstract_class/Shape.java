@@ -16,4 +16,5 @@ public abstract class Shape {
     public String getColor() {
         return color;
     }
+
 }
