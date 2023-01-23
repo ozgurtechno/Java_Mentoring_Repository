@@ -3,7 +3,7 @@ package datetime;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class _01_Period {
+public class _05_Period {
      // 2 tarih arasındaki farkı gosterir
      // LocaDate ler için kullanılır.
      public static void main(String[] args) {
