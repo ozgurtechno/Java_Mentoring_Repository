@@ -4,11 +4,11 @@ package abstraction.interfaces2.coupled;
 /**
  * Created by bsferreira on 17-04-2016.
  */
-public class Pilot {
+public class Driver {
 
-    private RacingCar vehicle;
+    private RacingCar vehicle; // Tightly coupled
 
-    public Pilot(){
+    public Driver(){
         this.vehicle = new RacingCar(100);
     }
 

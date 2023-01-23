@@ -6,7 +6,7 @@ public class Demo {
 
         RacingCar honda = new RacingCar(300);
 
-        Pilot driver = new Pilot();
+        Driver driver = new Driver();
         driver.increaseSpeed();
     }
 }

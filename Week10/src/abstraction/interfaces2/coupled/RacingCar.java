@@ -10,7 +10,7 @@ public class RacingCar {
     private int remainingFuel;
     private int power;
 
-    public RacingCar(final int maxFuel /* ,int count */) {
+    public RacingCar(final int maxFuel /*,int count */ ) {
         this.maxFuel = maxFuel;
         remainingFuel = maxFuel;
     }
