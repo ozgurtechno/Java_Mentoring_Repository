@@ -36,5 +36,24 @@ public class StringMethodlar {
 
         // Yazdiracagimiz kelimenin sagindaki ve solundaki bosluklari temizleyelim
         System.out.println(word.substring(6).trim());
+
+
+        // Reference Data Types ---------------------------------------------------------------------------------------
+
+        String wor = "Merhaba Dunya";
+        String word2 = "Merhaba Dunya";
+
+        boolean isEqual = wor == word2;
+        System.out.println("Bu iki kelime birbirine esit mi? " + isEqual);
+
+        String word3 = new String("Merhaba Dunya");
+        System.out.println(word3);
+
+        boolean isEqual2 = wor == word3;
+        System.out.println("Bu iki kelime birbirine esit mi? " + isEqual2);
+
+        boolean isEqual3 = wor.equals(word3);
+        boolean isEqual4 = wor.equalsIgnoreCase(word3);
+        System.out.println("Bu iki kelime birbirine esit mi? " + isEqual3);
     }
 }
