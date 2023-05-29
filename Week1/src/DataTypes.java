@@ -6,6 +6,9 @@ public class DataTypes {
         byte    b = 122;                     // 1 byte
         short   s = 22222;                   // 2 bytes
         int     i = 1222222222;              // 4 bytes
+
+        System.out.println(Integer.MAX_VALUE);
+
         long    l = 2222222222222222222L;    // 8 bytes
 
         // 8 bytes
@@ -32,6 +35,11 @@ public class DataTypes {
 
         int x = 554;
         long y = x;
+
+        long a = 99999999999999999L;
+        System.out.println(a);
+        int c =  (int) a;
+        System.out.println(c);
 
 
     }
