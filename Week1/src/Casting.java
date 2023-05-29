@@ -23,6 +23,7 @@ public class Casting {
         double data = num;
         System.out.println("The double value: " + data);
 
+
         // TODO Question-2
         // create double type variable
         double num1 = 10.99;
