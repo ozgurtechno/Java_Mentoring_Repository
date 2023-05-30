@@ -31,8 +31,6 @@ public class DataTypes {
         System.out.println(67+7);
 
 
-
-
         int x = 554;
         long y = x;
 

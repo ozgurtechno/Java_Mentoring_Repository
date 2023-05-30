@@ -7,7 +7,6 @@ public class Casting {
 
         int d1 = (int) 4.5;
 
-
        // 00000000 00000000 00000000 00000100
 
         //int number = 10.0;

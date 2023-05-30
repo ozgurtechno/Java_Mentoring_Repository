@@ -1,50 +1,65 @@
 package Tasks;
 
+import java.util.Scanner;
+
 public class Task_1 {
     public static void main(String[] args) {
-        /*
-        #1. You need to print message below using only 1 System.out.print()
-        C:\\”Program Files”\\..
-         */
-//        System.out.print("C:\\\\\"Program Files\"\\\\..");
+
+                Scanner scanner = new Scanner(System.in);
+
+                // Get the amount from the user
+                System.out.print("Enter the amount in cents: ");
+                int amount = scanner.nextInt();
+
+                // Calculate the change
+                int quarters = 1;
+                int dimes = 1;
+                int nickels = 1;
+                int pennies = 1;
+
+                // Display the change
+                System.out.println("Quarters: " + quarters);
+                System.out.println("Dimes: " + dimes);
+                System.out.println("Nickels: " + nickels);
+                System.out.println("Pennies: " + pennies);
 
 
-        /*
-       #2. You need to print message below using only 1 System.out.print()
-        “To be
-            or not
-                to be!”
-            \Shakespeare\
-         */
-//        System.out.print("\"To be\n\tor not\n\t\tto be!\"\n\t\\Shakespeare\\");
-
-        /*
-        #3. You are given two numbers(amount of minutes and seconds).
-        You need to convert it all into seconds only and print it.
-        Use Scanner class to read numbers from keyboard.
-         */
-//        Scanner in = new Scanner(System.in);
-//
-//        int minutes = in.nextInt();
-//        int seconds = in.nextInt();
-//
-//        int totalSeconds = minutes * 60 + seconds;
-//        System.out.println("Total seconds: " + totalSeconds);
-
-        /*
-        #4. You are given two numbers(price of a good and dicsount in percentage).
-        You need to find the final price(after calculating the discount) and print it.
-        Use Scanner class to read numbers from keyboard.
-         */
-
-//        Scanner in = new Scanner(System.in);
-//
-//        int price = in.nextInt();
-//        int discountInPercents = in.nextInt();
-//
-//        int discountAmount = price * discountInPercents / 100;
-//        int finalPrice = price - discountAmount;
-//
-//        System.out.println("Final price is: " + finalPrice);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    // Calculate the change
+//    int quarters = amount / 25;
+//    int dimes = (amount % 25) / 10;
+//    int nickels = ((amount % 25) % 10) / 5;
+//    int pennies = ((amount % 25) % 10) % 5;
+//
+//    // Display the change
+//    System.out.println("Quarters: " + quarters);
+//    System.out.println("Dimes: " + dimes);
+//    System.out.println("Nickels: " + nickels);
+//    System.out.println("Pennies: " + pennies);
