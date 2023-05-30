@@ -7,9 +7,12 @@ public class Task_1 {
 
                 Scanner scanner = new Scanner(System.in);
 
-                // Get the amount from the user
+                // Get the amount from the user as double
                 System.out.print("Enter the amount in cents: ");
-                int amount = scanner.nextInt();
+                double amount = scanner.nextDouble();
+
+                // Convert double to integer
+                int netAmount = 1;
 
                 // Calculate the change
                 int quarters = 1;
