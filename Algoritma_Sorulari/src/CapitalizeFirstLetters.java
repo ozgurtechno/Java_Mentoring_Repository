@@ -1,5 +1,3 @@
-package Week1_Algo;
-
 import java.util.Locale;
 
 public class CapitalizeFirstLetters {

@@ -1,5 +1,3 @@
-package Week1_Algo;
-
 public class NoSpace {
 
     public static void main(String[] args) {

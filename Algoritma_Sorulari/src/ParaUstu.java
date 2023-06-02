@@ -1,5 +1,3 @@
-package Week2_Algo;
-
 import java.util.Scanner;
 
 public class ParaUstu {

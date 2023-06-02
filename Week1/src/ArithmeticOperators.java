@@ -10,8 +10,9 @@ public class ArithmeticOperators {
         System.out.println("x * y = " + (x * y));
         System.out.println("x / y = " + (x / y));
 
-        // Modulus
         System.out.println("x % y = " + (x % y));
+        // 10 / 3 = 1
+        // Modulus
 
         // Increment - Decrement
         System.out.println("y = " + y++);
@@ -26,7 +27,7 @@ public class ArithmeticOperators {
         int a = 5;
         int b = 7;
 
-        System.out.println(a%b);
+        System.out.println("Result is "+ a % b);
 
         //
 

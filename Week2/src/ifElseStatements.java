@@ -10,9 +10,18 @@ public class ifElseStatements {
         // Create a Scanner object to read input.
         Scanner console = new Scanner(System.in);
 
-        // Get the test score.
-        System.out.print("Enter your numeric test score : ");
-        score = console.nextInt();
+        while (true){
+
+            // Get the test score.
+            System.out.print("Enter your numeric test score : ");
+            score = console.nextInt();
+
+            if (score > 0 && score <= 100){
+                break;
+            }
+            System.out.println("Please enter a valid grade between 0-100");
+        }
+
 
         // Calculate the grade.
         if (score >= 90) {

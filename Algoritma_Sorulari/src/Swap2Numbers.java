@@ -1,5 +1,3 @@
-package Week1_Algo;
-
 public class Swap2Numbers {
 
     public static void main(String[] args) {

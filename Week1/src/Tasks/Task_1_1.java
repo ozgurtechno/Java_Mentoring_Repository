@@ -8,15 +8,18 @@ public class Task_1_1 {
         int x = 6;
         int y = 12;
 
+        int temp = x;
+        x = y;
+        y = temp;
 
-
-        System.out.println("X is ...: " + x);
-        System.out.println("Y is ...: " + y);
+        System.out.println("X is ...: " + x);  // x = 12
+        System.out.println("Y is ...: " + y);  // y = 6
 
         // Swap without declaring third variable
         int a = 6;
         int b = 12;
 
+        // % 99 percent of your job will be copying and pasting
 
 
         System.out.println("A is ...: " + a);

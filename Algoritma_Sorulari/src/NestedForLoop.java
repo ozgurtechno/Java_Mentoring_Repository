@@ -1,5 +1,3 @@
-package Week2_Algo;
-
 public class NestedForLoop {
 
     public static void main(String[] args) {
