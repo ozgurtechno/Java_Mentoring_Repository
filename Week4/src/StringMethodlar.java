@@ -55,5 +55,16 @@ public class StringMethodlar {
         boolean isEqual3 = wor.equals(word3);
         boolean isEqual4 = wor.equalsIgnoreCase(word3);
         System.out.println("Bu iki kelime birbirine esit mi? " + isEqual3);
+
+        System.out.println("------------------------------ Ornek 4 --------------------------------------");
+
+        // Ornek 4 : Verilen bir Character Array ini String e ceviren programi yaziniz...
+        char[] ch = {'g', 'o', 'o', 'd', ' ', 'm', 'o', 'r', 'n', 'i', 'n', 'g'};
+        String str = new String(ch);
+        System.out.println(str);
+
+        // Method 2: valueOf methodu ile
+        String str2 = String.valueOf(ch);
+        System.out.println(str2);
     }
 }
