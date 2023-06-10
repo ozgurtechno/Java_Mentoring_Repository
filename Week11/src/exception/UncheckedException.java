@@ -8,8 +8,8 @@ public class UncheckedException {
         /*Since I'm dividing an integer with 0
          * it should throw ArithmeticException
          */
-        int res=num1/num2;
-        System.out.println(res);
+        //int res=num1/num2;
+        //System.out.println(res);
 
         //---------------------------------------------
 
@@ -18,13 +18,13 @@ public class UncheckedException {
          * display the value of 8th element. It should throw
          * ArrayIndexOutOfBoundsException
          */
-        System.out.println(arr[7]);
+       // System.out.println(arr[7]);
 
         //----------------------------------------------
 
         try{
             int arr1[] ={1,2,3,4,5};
-            System.out.println(arr1[4]);
+            System.out.println(arr1[9]);
         }
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println("The specified index does not exist " +

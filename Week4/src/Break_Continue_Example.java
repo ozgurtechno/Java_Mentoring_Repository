@@ -28,25 +28,7 @@ public class Break_Continue_Example {
         }
 
 
-        // Ornek 5 : Kullanici tarafindan girilen 5 pozitif sayinin toplamini hesaplayan
-        // Sayi 100 den buyuk ise hatali giris yapildigi ikazi vererek programi sonlandiran kodu yaziniz...
 
-
-        Scanner scan = new Scanner(System.in);
-        int toplam = 0;
-        for (int i = 0; i < 5; i++) {
-
-            System.out.println("0-100 arasi bir sayi giriniz?");
-            int a = scan.nextInt();
-            if (a > 100) {
-                System.out.println("Tekrar deneyin");
-                i--;
-            } else{
-                toplam += a;
-            }
-
-        }
-        System.out.println(toplam);
 
 
 

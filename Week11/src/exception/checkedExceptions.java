@@ -1,11 +1,12 @@
 package exception;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class checkedExceptions {
 
-    public static void main(String args[])  {
+    public static void main(String args[]) throws IOException {
         FileInputStream fis = null;
         /*This constructor FileInputStream(File filename)
          * throws FileNotFoundException which is a checked
