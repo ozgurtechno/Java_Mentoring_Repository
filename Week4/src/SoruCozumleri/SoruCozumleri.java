@@ -1,4 +1,4 @@
-package Cozumler;
+package SoruCozumleri;
 
 import java.util.Scanner;
 

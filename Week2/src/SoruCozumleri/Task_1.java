@@ -12,7 +12,7 @@ public class Task_1 {
             System.out.println("The number is negative.");
         }
 
-
+        System.out.println( (number >= 0) ? "The number is positive." : "The number is negative.");
         // Write above code with ternary operator
 
     }
@@ -44,4 +44,3 @@ public class Task_1 {
 
 
 
-// (number >= 0) ? "The number is positive." : "The number is negative.";

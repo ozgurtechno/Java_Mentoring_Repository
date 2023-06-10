@@ -1,5 +1,3 @@
-package Cozumler;
-
 import java.util.Scanner;
 
 public class DoWhileOrnek {
