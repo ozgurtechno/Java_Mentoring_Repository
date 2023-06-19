@@ -13,7 +13,7 @@ public class Task_1 {
 
         Scanner input = new Scanner(System.in);
 
-        int realPIN = 123;
+        int realPIN = 1234;
         int attempt = 1;
 
         do {
@@ -21,10 +21,10 @@ public class Task_1 {
             int pin = input.nextInt();
             if (pin == realPIN){
                 System.out.println("Access Granted"); break;
-            }else if (pin != realPIN && attempt !=3){
+            }else if (attempt != 3){
                 System.out.println("Your PIN is incorrect, Please try again");
             }else {
-                System.out.println("Your Card Blocked...");
+                System.out.println("Your Phone Blocked...");
             }
             attempt++;
 
