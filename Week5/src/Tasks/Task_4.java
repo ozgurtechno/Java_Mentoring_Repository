@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class ArrayListYedekSoru {
+public class Task_4 {
     public static void main(String[] args) {
 
         // Elemanları Türkiye ,  Almanya, Fransa, Italya ve Kanada olan ArrayList oluşturun.

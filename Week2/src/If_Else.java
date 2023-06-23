@@ -1,5 +1,3 @@
-package Tasks;
-
 import java.util.Scanner;
 
 public class If_Else {
