@@ -44,4 +44,9 @@ public class Task_3 {
 
     }
 
+    public static boolean checkIfValid(String email){
+
+        return true;
+    }
+
 }

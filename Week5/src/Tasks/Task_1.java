@@ -4,7 +4,7 @@ public class Task_1 {
 
     public static void main(String[] args) {
 
-        // Write a programme which reverse a given String
+        // Write a method which reverse a given String
 
         String str= "Techno", reversed="";
         char ch;
