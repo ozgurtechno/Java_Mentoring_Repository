@@ -1,19 +1,19 @@
-package Tasks.okul;
+package Tasks.school;
 
 public class Teacher {
 
     public String firstName;
     public String lastName;
-    public Address adres;
-    public Course ders;
+    public Address address;
+    public Course course;
 
     @Override
     public String toString() {
         return "Teacher{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", adres=" + adres +
-                ", ders=" + ders +
+                ", adres=" + address +
+                ", ders=" + course +
                 '}';
     }
 }

@@ -1,18 +1,18 @@
-package Tasks.okul;
+package Tasks.school;
 
 public class Okul_DEMO {
 
     public static void main(String[] args) {
 
         Address adres = new Address();
-        adres.address = "Java cok guzel, Ogreniyorum Sok...";
-        adres.city = "Ankara";
+        adres.address = "Hello World Dr";
+        adres.city = "Washington";
         adres.zipCode = 10001;
 
         Teacher teacher = new Teacher();
-        teacher.firstName = "Ismet";
+        teacher.firstName = "Azamat";
         teacher.lastName = "Ozgur";
-        teacher.adres = adres;
+        teacher.address = adres;
 
         Course ders = new Course();
         ders.name = "Java";
@@ -24,17 +24,17 @@ public class Okul_DEMO {
         student.lastName = "Veli";
         student.grade = 4;
 
-        teacher.ders = ders;
+        teacher.course = ders;
         student.dersler.add(ders);
 
 
-        School okul = new School();
-        okul.students.add(student);
-        okul.courses.add(ders);
-        okul.teachers.add(teacher);
+        School school = new School();
+        school.students.add(student);
+        school.courses.add(ders);
+        school.teachers.add(teacher);
 
 
-        System.out.println(okul);
+        System.out.println(school);
     }
 
 

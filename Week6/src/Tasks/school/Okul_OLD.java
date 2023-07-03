@@ -1,14 +1,14 @@
-package Tasks.okul;
+package Tasks.school;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Okul_Eskiden {
+public class Okul_OLD {
 
     public static void main(String[] args) {
 
         // Okul
-        String schoolName = "ODTU";
+        String schoolName = "Washington University";
         List<String> departments = new ArrayList<>(List.of("Electronics", "Economy", "Computer Science", "Sports"));
 
         // Ogrenciler

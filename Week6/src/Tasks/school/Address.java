@@ -1,4 +1,4 @@
-package Tasks.okul;
+package Tasks.school;
 
 public class Address {
 
