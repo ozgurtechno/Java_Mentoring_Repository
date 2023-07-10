@@ -1,8 +1,5 @@
 package Static_Demo;
 
-import java.sql.SQLOutput;
-import java.util.Scanner;
-
 public class Static_Demo {
 
     public static void main(String[] args) {
